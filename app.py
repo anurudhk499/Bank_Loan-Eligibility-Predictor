@@ -220,12 +220,12 @@ with st.container():
     with col2:
         self_employed = st.selectbox("Employment Type", ["Yes", "No"])
         property_area = st.selectbox("Property Area", ["Urban", "Rural", "Semiurban"])
-        credit_history = st.radio("Credit History", ["Good (1.0)", "Bad (0.0)"], horizontal=True)
+        credit_history = st.radio("Credit History", ["Good", "Bad"], horizontal=True)
 
     with col3:
-        applicant_income = st.number_input("Monthly Income ($)", min_value=0, value=5000, step=500)
-        coapplicant_income = st.number_input("Co-applicant Income ($)", min_value=0, value=0, step=500)
-        loan_amount = st.number_input("Loan Amount ($K)", min_value=0, value=150, step=10)
+        applicant_income = st.number_input("Monthly Income (₹)", min_value=0, value=5000, step=500)
+        coapplicant_income = st.number_input("Co-applicant Income (₹)", min_value=0, value=0, step=500)
+        loan_amount = st.number_input("Loan Amount (₹K)", min_value=0, value=150, step=10)
         loan_term = st.selectbox("Loan Term", [360, 180, 120, 60, 300], format_func=lambda x: f"{x} Months")
 
 # ================= BUTTON =================
@@ -306,4 +306,5 @@ if predict_button:
 
 </div>
 </div>
+
 """, unsafe_allow_html=True)
