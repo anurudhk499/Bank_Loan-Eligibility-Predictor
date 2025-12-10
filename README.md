@@ -1,6 +1,9 @@
 ## Loan Eligibility Prediction System<br>
 A Machine Learning–Driven Decision Support Web Application
 
+### Live Demo
+https://bankloan-eligibility-predictor-mfsawstzsp8vggoj8mgpob.streamlit.app/
+
 ### Project Description
 The Loan Eligibility Prediction System is a full-stack machine learning web application designed to assist financial institutions and users in assessing loan approval likelihood based on applicant demographic, financial, and credit-related attributes.
 The application leverages a supervised classification model to predict whether a loan applicant is eligible for approval and provides a probability score representing approval confidence. The system is deployed as an interactive web interface using Streamlit, combining machine learning inference with a modern, responsive user interface.
